@@ -1,0 +1,10 @@
+<div class="user-profile">
+  <div class="icon text-center">
+    <p><%= image_tag "/user_pictures/#{@user.picture}",:size =>"280x210" %></p>
+  </div>
+  <div class="name text-center">
+    <h1><%= @user.name %></h1>
+    <p>性別：<%= @user.sex %></p>
+    <p>自己紹介：<%= @user.introduction %></p>
+  </div>
+</div>
