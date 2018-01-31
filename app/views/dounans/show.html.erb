@@ -1,0 +1,47 @@
+<div class="area hokkaido">
+  <h1><%= @dounan.title %></h1>
+  <ul class="media-list">
+    <div class="row">
+      <aside class="col-xs-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <li class="media">
+              <img border="0" src="/images/<%= @dounan.image_url %>" class="sample" width = "480" height = "320">
+              <h2>情報</h2>
+              <p><%= @dounan.content %></p>
+              <p>営業時間：<%= @dounan.time %></p>
+              <p>交通アクセス：<%= @dounan.access %></p>
+              <p>住所：<%= @dounan.address %></p>
+              <p>料金：<%= @dounan.fee %>円</p>
+              <p>更に詳しい情報はこちら　=>　<%= @dounan.hp %></p>
+              <div style='width: 100%;'>
+               <div id="map" style='width: 100%; height: 33vh;'></div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </ul>
+</div>
+  
+
+<script type="text/javascript">
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": <%= @dounan.latitude %>,
+        "lng": <%= @dounan.longitude %>,
+        "picture": {
+          "width":  32,
+          "height": 32
+        },
+        "infowindow": '<%= @dounan.name %>'
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+    handler.getMap().setZoom(15);
+  });
+</script>

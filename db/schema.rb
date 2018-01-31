@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180128094720) do
+ActiveRecord::Schema.define(version: 20180129125427) do
+
+  create_table "dounans", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.string   "content"
+    t.float    "latitude",   limit: 24
+    t.float    "longitude",  limit: 24
+    t.string   "time"
+    t.string   "access"
+    t.string   "hp"
+    t.string   "image_url"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "address"
+    t.integer  "fee"
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"

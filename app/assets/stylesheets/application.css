@@ -39,12 +39,128 @@ footer {
 .cover .cover-inner .cover-contents {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
   position: relative;
 }
 .cover .cover-inner .cover-contents h1 {
   margin: 0 0 20px 0;
   color: #fff;
+  text-align: center;
   font-weight: bold;
   letter-spacing: 0.15em;
+}
+.cover .cover-inner .cover-contents p {
+  margin: 0 0 20px 0;
+}
+.panel-title {
+  color: #ffffff;
+	font-size: 24px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px;
+	background: #000000;
+	box-shadow: 10px 0 0 0 #000000, -10px 0 0 0 #000000, 0 3px 3px 0 rgba(0,0,0,0.1);
+}
+.panel-title:before {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: transparent;
+	border-right-color: #4f4f4f;
+}
+.panel-title:after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-width: 10px 10px 0 0;
+	border-style: solid;
+	border-color: transparent;
+	border-top-color: #4f4f4f;
+}
+.panel-h2 {
+	font-size: 16px;
+	line-height: 20px;
+	padding: .5em 0 .5em 1.5em;
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #000000;
+}
+.panel-h2:after {
+	content: " ";
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	width: 6px;
+	height: calc(100% - 1em);
+	background: #000000;
+}
+.area {
+  padding: 10px;
+  background: #ffffff;
+  background-position: center center;   /* 画像を常に天地左右の中央に配置 */
+  background-repeat: no-repeat; 
+  background-attachment: fixed;   /* 背景画像の位置を固定し、スクロールしても動かないようにする */
+  background-size: cover;   /*縦横比を保持したまま、背景領域を覆う最小サイズになるように画像を拡大縮小する */
+}
+
+.area h1 {
+  color: #ffffff;
+	font-size: 24px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px;
+	background: #000000;
+	box-shadow: 10px 0 0 0 #000000, -10px 0 0 0 #000000, 0 3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.area h1:before {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: transparent;
+	border-right-color: #4f4f4f;
+}
+.area h1:after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-width: 10px 10px 0 0;
+	border-style: solid;
+	border-color: transparent;
+	border-top-color: #4f4f4f;
+}
+.area h2 {
+	font-size: 16px;
+	line-height: 20px;
+	padding: .5em 0 .5em 1.5em;
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #000000;
+}
+.area h2:after {
+	content: " ";
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	width: 6px;
+	height: calc(100% - 1em);
+	background: #000000;
+}
+.hokkaido{
+  background-color:#ADFF2F;
 }

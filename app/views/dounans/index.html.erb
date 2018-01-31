@@ -1,0 +1,34 @@
+<div class="area hokkaido">
+  <h1>道南エリア</h1>
+
+  <div class="panel panel-default">
+    <br /><p>道南エリアには、函館山や五稜郭・地球岬・襟裳岬・松前城といった観光地があります。
+    <br />特に、函館の夜景は100万ドルに値し、日本三大夜景の一つに数えられています。</p>
+
+    <ul class="media-list">
+      <% @dounans.each do |dounan| %>
+        <div class="row">
+          <aside class="col-xs-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <li class="media">
+                  <div>
+                    <%= dounan.id %> : <%= link_to dounan.title, dounan %>
+                  </div>
+                  <br />
+                  <div>
+                    <%= dounan.content %>
+                  </div>
+                  <div>
+                    <%= image_tag(dounan.image_url,:size =>"200x150") %>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </aside>
+        </div>
+      <% end %>
+      <%= paginate @dounans %>
+    </ul>
+  </div>
+</div>

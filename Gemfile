@@ -53,3 +53,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 gem 'carrierwave'
+gem 'gmaps4rails'  # railsでGoogle mapを使えるようにする
+#gem 'geocoder'     # 地名から緯度経度を引けるようにする

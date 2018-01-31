@@ -1,7 +1,1 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Dounan.create(:image_url => "函館山ロープウェイ.jpg", :title => "函館山ロープウェイ", :content => "山麓から山頂まで、およそ3分に渡る空中散歩。山頂に着いたら、そこには絶景が広がります。", :time => "4/25頃～10/15頃は10時～22時（上り最終は21:50）、10/16頃～4/24頃は10時～21時（上り最終は20:50）", :access => "市電十字街電停から徒歩10分、函館駅からロープウェイ前までシャトルバスあり（夜間限定）", :fee => 1280, :latitude => 41.760, :longitude => 140.714, :hp => "http://334.co.jp/ropeway/" )
